@@ -35,4 +35,21 @@ return [
         ],
     ],
 
+    'fonnte' => [
+        'token' => env('FONNTE_TOKEN'),
+        'base_url' => env('FONNTE_BASE_URL', 'https://api.fonnte.com'),
+    ],
+
+    'groq' => [
+        'api_key' => env('GROQ_API_KEY'),
+        'base_url' => env('GROQ_BASE_URL', 'https://api.groq.com/openai/v1'),
+        'model_form' => env('GROQ_MODEL_FORM', 'openai/gpt-oss-120b'),
+        'model_router' => env('GROQ_MODEL_ROUTER', 'openai/gpt-oss-20b'),
+        'model_ask' => env('GROQ_MODEL_ASK', 'openai/gpt-oss-120b'),
+    ],
+
+    'rgp' => [
+        'base_url' => env('RGP_API_BASE_URL', 'https://restugurupromosindo.com'),
+    ],
+
 ];
